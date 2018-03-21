@@ -27,7 +27,11 @@ If script isn't executable, change permissions:
 
 ## Usage
 
-Before anything, please install [Materia build requirements](https://github.com/nana-4/materia-theme#requirements)!
+Before anything, please install Materia build requirements:
+- sassc
+- inkscape
+- optipng
+- gtk2 murrine engine
 
 Launch the script:
 
