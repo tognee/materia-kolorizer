@@ -33,7 +33,7 @@ Launch the script:
 
 `cd $(xdg-user-dir DOWNLOAD) && ./materia-kolorizer.sh`
 
-*It won't replace your existing Materia installation.*
+*It won't replace your existing Materia installation if any.*
 
 Default color is "Bootstrap purple" #7952B3. To change colors, open the script in a text editor and modify the HEX color codes in variables *(lines beginning with "readonly" at the top of the script)*. Some color codes are commented in the script to help you quickly find something you may like. You can set a custom name for the theme too.
 
