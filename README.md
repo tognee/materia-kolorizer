@@ -38,7 +38,7 @@ Before anything, please install Materia build requirements:
 Launch the script:
 
 ```
-cd $(xdg-user-dir DOWNLOAD) && ./materia-kolorizer.sh`
+cd $(xdg-user-dir DOWNLOAD) && ./materia-kolorizer.sh
 ```
 
 *It won't replace your existing Materia installation if any.*
