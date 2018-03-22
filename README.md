@@ -17,15 +17,15 @@ This bash script provides an easy way to change [Materia GTK theme](https://gith
 
 ## Installation
 
-You don't have to download Materia, this script does everything for you.
+```
+cd $(xdg-user-dir DOWNLOAD)
+wget https://raw.githubusercontent.com/DarthWound/materia-kolorizer/master/materia-kolorizer.sh
+chmod +x materia-kolorizer.sh
+```
 
-`cd $(xdg-user-dir DOWNLOAD)`
+You don't have to download Materia, the script does everything for you.
 
-`wget https://raw.githubusercontent.com/DarthWound/materia-kolorizer/master/materia-kolorizer.sh`
-
-If script isn't executable, change permissions:
-
-`chmod +x materia-kolorizer.sh`
+If you already have this script installed, remove the old version first.
 
 ## Usage
 
@@ -37,7 +37,9 @@ Before anything, please install Materia build requirements:
 
 Launch the script:
 
-`cd $(xdg-user-dir DOWNLOAD) && ./materia-kolorizer.sh`
+```
+cd $(xdg-user-dir DOWNLOAD) && ./materia-kolorizer.sh`
+```
 
 *It won't replace your existing Materia installation if any.*
 
