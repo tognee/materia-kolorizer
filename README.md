@@ -2,7 +2,7 @@
 
 ---
 
-**Need matching icons and wallpapers?
+:information_source: **Need matching icons and wallpapers?
 Check [papirus-kolorizer](https://github.com/DarthWound/papirus-kolorizer) and [wallpaper-kolorizer](https://github.com/DarthWound/wallpaper-kolorizer)!**
 
 ---
