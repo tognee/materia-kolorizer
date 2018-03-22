@@ -1,10 +1,14 @@
 ![title](materiaK-title.gif)
 
 ---
+---
+---
 
 :information_source: **Need matching icons and wallpapers?
 Check [papirus-kolorizer](https://github.com/DarthWound/papirus-kolorizer) and [wallpaper-kolorizer](https://github.com/DarthWound/wallpaper-kolorizer)!**
 
+---
+---
 ---
 
 This bash script provides an easy way to change [Materia GTK theme](https://github.com/nana-4/materia-theme) primary and accent colors.
