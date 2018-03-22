@@ -65,6 +65,7 @@ sed -i 's/"M+ 1c", Roboto, Cantarell/Cantarell, "M+ 1c", Roboto/g' src/_sass/gno
 
 sed -i 's/symbolic/regular/g' src/_sass/gnome-shell/_common{-3.18,-3.24,-3.26,-3.28}.scss
 
+sed -i "s/40C4FF/$PrimaryColor/gI" src/_sass/_color-palette.scss
 sed -i "s/338DD6/$PrimaryColor/gI" src/_sass/_color-palette.scss
 sed -i "s/338DD6/$PrimaryColor/gI" src/_sass/_colors.scss
 sed -i "s/338DD6/$PrimaryColor/gI" src/gnome-shell/assets{,-dark}/*.svg
