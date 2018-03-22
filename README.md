@@ -49,6 +49,6 @@ cd $(xdg-user-dir DOWNLOAD) && ./materia-kolorizer.sh
 
 Default color is "Bootstrap purple" #7952B3. To change colors, open the script in a text editor and modify the HEX color codes in variables *(lines beginning with "readonly" at the top of the script)*. Some color codes are commented in the script to help you quickly find something you may like. You can set a custom name for the theme too.
 
-Please note that I changed GNOME Shell fonts, since GNOME 3.28 Cantarell supports different weights. If you want to keep Materia defaults *(Roboto and M+1c)* then edit the script and remove the matching lines *(62-63)*.
+Please note that I changed GNOME Shell fonts, since GNOME 3.28 Cantarell supports different weights. If you want to keep Materia defaults *(Roboto and M+1c)* then edit the script and remove the matching lines *(63-64)*.
 
 *PS: I know that there is a script provided by Materia (and Oomox utility) to create custom themes, the difference here is that we only change primary/accent colors and keep Materia theme (+variants) totally intact.*
