@@ -9,15 +9,25 @@ readonly GnomeShellClose="7952B3"
 ### Some colors
 ## Material Design palette -> https://material.io/guidelines/style/color.html#color-color-palette
 ## Fluent Design palette -> https://docs.microsoft.com/en-us/windows/uwp/design/style/color#accent-color
+## Arch blue = 1793D1
+## Crunchbang dark = 2E3436
+## Crunchbang light = BFBFBF
 ## Debian red = D70A53
 ## Fedora blue = 3C6EB4
+## Gentoo purple = 54487A
 ## openSUSE lightgreen = 73BA25
 ## openSUSE darkgreen = 6DA741
 ## openSUSE lightcyan = 35B9AB
 ## openSUSE darkcyan = 00A489
+## Pop OS brown = 574F4A
+## Pop OS cyan = 48B9C7
+## Pop OS yellow = FAA41A
 ## RedHat red = CC0000
 ## RedHat lightblue = A3DBE8
 ## RedHat darkblue = 004153
+## SteamOS green = 5C7E10
+## SteamOS bluedark = 252C3F
+## SteamOS bluelight = 6699FF
 ## SUSE green = 02D35F
 ## Ubuntu orange = E95420
 ## Ubuntu purple = 772953
@@ -40,6 +50,8 @@ readonly GnomeShellClose="7952B3"
 ## Bulma green = 00D1B2
 ## Lamborghini gold = DDB321
 ## Mozilla MDN blue = 3F87A6
+## Mozilla MDN grey = 9B9B9B
+## Mozilla MDN red = E66465
 ## Mozilla MDN yellow = F6B73C
 ## OnePlus red = EB0029
 ## VALVe brown = 745E4E
