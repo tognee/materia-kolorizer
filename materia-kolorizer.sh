@@ -104,7 +104,7 @@ sed -i "s/009688/$AccentColor/gI" src/gtk-2.0/gtkrc{,-dark,-light}
 sed -i "s/009688/$AccentColor/gI" src/metacity-1/metacity-theme-2{,-light}.xml
 sed -i "s/009688/$AccentColor/gI" src/metacity-1/metacity-theme-3{,-light}.xml
 
-sed -i "s/FF5252/$GnomeShellClose/gI" src/gnome-shell/assets/window-close{,-active}.svg
+sed -i "s/FF5252/$GnomeShellClose/gI" src/gnome-shell/assets{,-dark}/window-close{,-active}.svg
 
 sleep 2s
 
