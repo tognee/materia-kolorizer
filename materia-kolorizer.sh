@@ -8,6 +8,7 @@ readonly GnomeShellClose="7952B3"
 
 ### Some colors
 ## Material Design palette -> https://material.io/guidelines/style/color.html#color-color-palette
+## Fluent Design palette -> https://docs.microsoft.com/en-us/windows/uwp/design/style/color#accent-color
 ## Debian red = D70A53
 ## Fedora blue = 3C6EB4
 ## openSUSE lightgreen = 73BA25
@@ -20,13 +21,35 @@ readonly GnomeShellClose="7952B3"
 ## SUSE green = 02D35F
 ## Ubuntu orange = E95420
 ## Ubuntu purple = 772953
+## Ubuntu Budgie blue = 4D90D6
+## Ubuntu Budgie red = A34F6D
+## Ubuntu Budgie slate = 383C4A
 ## Ubuntu MATE green = 87A556
 ## Ubuntu MATE red = DD4814
-## Budgie slate = 404552
-## GNOME Adwaita folders = E3D1B6
-## GNOME Adwaita gtk blue = 4A90D9
-## GNOME Adwaita shell blue = 256AB1
+## GNOME Adwaita beige = E3D1B6
+## GNOME Adwaita blue = 4A90D9
 ## KDE Plasma blue = 3DAEE9
+## Windows select blue = CDE4FC
+## Windows folder yellow = FFE79B
+## MiamiVice bluegreen = 0BD3D3
+## MiamiVice pink = F890E7
+## Apple website blue = 0070C9
+## Bootstrap purple = 7952B3
+## Bootstrap yellow = FFE484
+## Bootstrap grey = 6C757D
+## Bulma green = 00D1B2
+## Lamborghini gold = DDB321
+## Mozilla MDN blue = 3F87A6
+## Mozilla MDN yellow = F6B73C
+## OnePlus red = EB0029
+## VALVe brown = 745E4E
+## VALVe green = D3D6CA
+## VALVe orange = CF381E
+## Pantone rose quartz = F7CAC9
+## Pantone serenity = 92A8D1
+## Sherwin taupe = 8C7E78
+## Gunmetal = 2C3539
+## DarthWound red = A63F3F
 ## Papirus black = 505050
 ## Papirus grey = 8D8D8D
 ## Papirus brown = AE8D6E
@@ -34,24 +57,6 @@ readonly GnomeShellClose="7952B3"
 ## Papirus teal = 009F85
 ## Papirus cyan = 00BAD2
 ## Papirus blue = 4F92DE
-## Miami80 blue = 46AECC
-## Miami80 pink = CC468E
-## Apple blue = 0070C9
-## Bootstrap purple = 7952B3
-## Bootstrap yellow = FFE484
-## Bootstrap grey = 6C757D
-## Bulma green = 00D1B2
-## KNACSS green = 13747D
-## KNACSS red = CF361B
-## Lamborghini gold = DDB321
-## Mozilla beige = D7D3C8
-## OnePlus red = EB0029
-## Pantone ultraviolet = 5F4B8B
-## Pantone rose quartz = F7CAC9
-## Pantone serenity = 92A8D1
-## Sherwin taupe = 8C7E78
-## Gunmetal = 2C3539
-## DarthWound red = A63F3F
 
 sudo rm -rf /usr/share/themes/$ThemeName*
 
