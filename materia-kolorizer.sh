@@ -119,7 +119,7 @@ chmod +x install.sh
 sudo ./install.sh
 
 sleep 2s
-
+sudo sed -i 's/212121/000000/g' /usr/share/themes/MateriaK*/gnome-shell/gnome-shell.css # for panel and dock consistency
 cd ..
 rm -rf materia-theme-master
 
