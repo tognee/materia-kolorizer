@@ -120,7 +120,7 @@ chmod +x install.sh
 sudo ./install.sh
 
 sleep 2s
-sudo sed -i 's/212121/$GnomeShellPanel/g' /usr/share/themes/MateriaK*/gnome-shell/gnome-shell.css
+sudo sed -i "s/212121/$GnomeShellPanel/g" /usr/share/themes/MateriaK*/gnome-shell/gnome-shell.css
 cd ..
 rm -rf materia-theme-master
 
