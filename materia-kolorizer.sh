@@ -5,6 +5,7 @@ readonly ThemeName="MateriaK"
 readonly PrimaryColor="7952B3"
 readonly AccentColor="7952B3"
 readonly GnomeShellClose="7952B3"
+readonly GnomeShellPanel="000000" #default:212121
 
 ### Some colors
 ## Material Design palette -> https://material.io/guidelines/style/color.html#color-color-palette
@@ -119,7 +120,7 @@ chmod +x install.sh
 sudo ./install.sh
 
 sleep 2s
-sudo sed -i 's/212121/000000/g' /usr/share/themes/MateriaK*/gnome-shell/gnome-shell.css # for panel and dock consistency
+sudo sed -i 's/212121/$GnomeShellPanel/g' /usr/share/themes/MateriaK*/gnome-shell/gnome-shell.css
 cd ..
 rm -rf materia-theme-master
 
