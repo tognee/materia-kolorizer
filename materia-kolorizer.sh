@@ -66,6 +66,7 @@ readonly GnomeShellPanel="000000" #default:212121
 ## Pantone serenity = 92A8D1
 ## Sherwin taupe = 8C7E78
 ## Gunmetal = 2C3539
+## Graphite = 577287
 ## DarthWound red = A63F3F
 ## Papirus black = 505050
 ## Papirus grey = 8D8D8D
