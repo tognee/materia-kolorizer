@@ -49,6 +49,7 @@ readonly GnomeShellPanel="000000" #default:212121
 ## Apple website grey = 888888
 ## Apple website orange = E85D00
 ## Apple website red = CF102D
+## Bondi Blue = 0095B6
 ## Bootstrap purple = 7952B3
 ## Bootstrap yellow = FFE484
 ## Bootstrap grey = 6C757D
