@@ -5,7 +5,8 @@ readonly ThemeName="MateriaK"
 readonly PrimaryColor="7952B3"
 readonly AccentColor="7952B3"
 readonly GnomeShellClose="7952B3"
-readonly GnomeShellPanel="000000" #default:212121
+readonly GnomeShellPanel="000000" #comment line 126 to use default
+readonly GnomeShellFont="Cantarell" #comment lines 91&92 to use default
 
 ### Some colors
 ## Material Design palette -> https://material.io/guidelines/style/color.html#color-color-palette
@@ -87,10 +88,8 @@ sleep 2s
 sed -i "s/Materia/$ThemeName/g" install.sh
 sed -i "/Comment/!s/Materia/$ThemeName/g" src/*.theme
 
-sed -i 's/Roboto, "M+ 1c", Cantarell/Cantarell, Roboto, "M+ 1c"/g' src/_sass/gnome-shell/_variables.scss
-sed -i 's/"M+ 1c", Roboto, Cantarell/Cantarell, "M+ 1c", Roboto/g' src/_sass/gnome-shell/_variables.scss
-
-sed -i 's/symbolic/regular/g' src/_sass/gnome-shell/_common{-3.18,-3.24,-3.26,-3.28}.scss
+sed -i "s/Roboto, \"M+ 1c\", Cantarell/$GnomeShellFont/g" src/_sass/gnome-shell/_variables.scss
+sed -i "s/\"M+ 1c\", Roboto, Cantarell/$GnomeShellFont/g" src/_sass/gnome-shell/_variables.scss
 
 sed -i "s/40C4FF/$PrimaryColor/gI" src/_sass/_color-palette.scss
 sed -i "s/338DD6/$PrimaryColor/gI" src/_sass/_color-palette.scss
@@ -112,6 +111,8 @@ sed -i "s/009688/$AccentColor/gI" src/metacity-1/metacity-theme-2{,-light}.xml
 sed -i "s/009688/$AccentColor/gI" src/metacity-1/metacity-theme-3{,-light}.xml
 
 sed -i "s/FF5252/$GnomeShellClose/gI" src/gnome-shell/assets{,-dark}/window-close{,-active}.svg
+
+sed -i 's/symbolic/regular/g' src/_sass/gnome-shell/_common{-3.18,-3.24,-3.26,-3.28}.scss
 
 sleep 2s
 
