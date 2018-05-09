@@ -5,8 +5,7 @@ readonly ThemeName="MateriaK"
 readonly PrimaryColor="7952B3"
 readonly AccentColor="7952B3"
 readonly GnomeShellClose="7952B3"
-readonly GnomeShellPanel="000000" #comment line 126 to use default
-readonly GnomeShellFont="Cantarell" #comment lines 91&92 to use default
+readonly GnomeShellFont="Cantarell" #comment lines 90&91 to use default
 
 ### Some colors
 ## Material Design palette -> https://material.io/guidelines/style/color.html#color-color-palette
@@ -31,8 +30,8 @@ readonly GnomeShellFont="Cantarell" #comment lines 91&92 to use default
 ## SteamOS bluedark = 252C3F
 ## SteamOS bluelight = 6699FF
 ## SUSE green = 02D35F
-## Ubuntu orange = E95420
-## Ubuntu purple = 772953
+## Ubuntu orange = EB6536
+## Ubuntu purple = 84377D
 ## Ubuntu Budgie blue = 4D90D6
 ## Ubuntu Budgie red = A34F6D
 ## Ubuntu Budgie slate = 383C4A
@@ -123,7 +122,6 @@ chmod +x install.sh
 sudo ./install.sh
 
 sleep 2s
-sudo sed -i "s/212121/$GnomeShellPanel/g" /usr/share/themes/MateriaK*/gnome-shell/gnome-shell.css
 cd ..
 rm -rf materia-theme-master
 
