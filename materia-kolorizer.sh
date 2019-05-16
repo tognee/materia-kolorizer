@@ -1,9 +1,8 @@
 #!/bin/bash
-# Change Materia accent/primary colors
 
 readonly ThemeName="MateriaK"
-readonly PrimaryColor="7952B3"
 readonly AccentColor="7952B3"
+readonly AltColor="7952B3"
 readonly GnomeShellClose="7952B3"
 readonly GnomeShellFont="Cantarell" #comment lines 90&91 to use default
 
@@ -87,31 +86,40 @@ sleep 2s
 sed -i "s/Materia/$ThemeName/g" install.sh
 sed -i "/Comment/!s/Materia/$ThemeName/g" src/*.theme
 
-sed -i "s/Roboto, \"M+ 1c\", Cantarell/$GnomeShellFont/g" src/_sass/gnome-shell/_variables.scss
-sed -i "s/\"M+ 1c\", Roboto, Cantarell/$GnomeShellFont/g" src/_sass/gnome-shell/_variables.scss
+sed -i "s/Roboto, \"M+ 1c\"/$GnomeShellFont/g" src/_sass/gnome-shell/_variables.scss
+sed -i "s/\"M+ 1c\", Roboto/$GnomeShellFont/g" src/_sass/gnome-shell/_variables.scss
 
-sed -i "s/40C4FF/$PrimaryColor/gI" src/_sass/_color-palette.scss
-sed -i "s/338DD6/$PrimaryColor/gI" src/_sass/_color-palette.scss
-sed -i "s/338DD6/$PrimaryColor/gI" src/_sass/_colors.scss
-sed -i "s/338DD6/$PrimaryColor/gI" src/gnome-shell/assets{,-dark}/*.svg
-sed -i "s/338DD6/$PrimaryColor/gI" src/gtk/assets.svg
-sed -i "s/338DD6/$PrimaryColor/gI" src/gtk-2.0/assets{,-dark}.svg
-sed -i "s/338DD6/$PrimaryColor/gI" src/gtk-2.0/gtkrc{,-dark,-light}
-sed -i "s/338DD6/$PrimaryColor/gI" src/metacity-1/metacity-theme-2{,-light}.xml
-sed -i "s/338DD6/$PrimaryColor/gI" src/metacity-1/metacity-theme-3{,-light}.xml
+sed -i "s/4285F4/$AccentColor/gI" src/_sass/_color-palette.scss
+sed -i "s/4285F4/$AccentColor/gI" src/_sass/_colors.scss
+sed -i "s/4285F4/$AccentColor/gI" src/gnome-shell/assets{,-dark}/*.svg
+sed -i "s/4285F4/$AccentColor/gI" src/gtk/assets.svg
+sed -i "s/4285F4/$AccentColor/gI" src/gtk-2.0/assets{,-dark}.svg
+sed -i "s/4285F4/$AccentColor/gI" src/gtk-2.0/gtkrc{,-dark,-light}
+sed -i "s/4285F4/$AccentColor/gI" src/metacity-1/metacity-theme-2{,-light}.xml
+sed -i "s/4285F4/$AccentColor/gI" src/metacity-1/metacity-theme-3{,-light}.xml
+sed -i "s/4285F4/$AccentColor/gI" src/cinnamon/*.scss
+sed -i "s/4285F4/$AccentColor/gI" src/cinnamon/assets/*.svg
+sed -i "s/4285F4/$AccentColor/gI" src/xfwm4/assets/*.svg
+sed -i "s/4285F4/$AccentColor/gI" src/xfwm4/assets-light/*.svg
+sed -i "s/4285F4/$AccentColor/gI" src/openbox-3/themerc
 
-sed -i "s/009688/$AccentColor/gI" src/_sass/_color-palette.scss
-sed -i "s/009688/$AccentColor/gI" src/_sass/_colors.scss
-sed -i "s/009688/$AccentColor/gI" src/gnome-shell/assets{,-dark}/*.svg
-sed -i "s/009688/$AccentColor/gI" src/gtk/assets.svg
-sed -i "s/009688/$AccentColor/gI" src/gtk-2.0/assets{,-dark}.svg
-sed -i "s/009688/$AccentColor/gI" src/gtk-2.0/gtkrc{,-dark,-light}
-sed -i "s/009688/$AccentColor/gI" src/metacity-1/metacity-theme-2{,-light}.xml
-sed -i "s/009688/$AccentColor/gI" src/metacity-1/metacity-theme-3{,-light}.xml
+sed -i "s/7BAAF7/$AltColor/gI" src/_sass/_color-palette.scss
+sed -i "s/7BAAF7/$AltColor/gI" src/_sass/_colors.scss
+sed -i "s/7BAAF7/$AltColor/gI" src/gnome-shell/assets{,-dark}/*.svg
+sed -i "s/7BAAF7/$AltColor/gI" src/gtk/assets.svg
+sed -i "s/7BAAF7/$AltColor/gI" src/gtk-2.0/assets{,-dark}.svg
+sed -i "s/7BAAF7/$AltColor/gI" src/gtk-2.0/gtkrc{,-dark,-light}
+sed -i "s/7BAAF7/$AltColor/gI" src/metacity-1/metacity-theme-2{,-light}.xml
+sed -i "s/7BAAF7/$AltColor/gI" src/metacity-1/metacity-theme-3{,-light}.xml
+sed -i "s/7BAAF7/$AltColor/gI" src/cinnamon/*.scss
+sed -i "s/7BAAF7/$AltColor/gI" src/cinnamon/assets/*.svg
+sed -i "s/7BAAF7/$AltColor/gI" src/xfwm4/assets/*.svg
+sed -i "s/7BAAF7/$AltColor/gI" src/xfwm4/assets-light/*.svg
+sed -i "s/7BAAF7/$AltColor/gI" src/openbox-3/themerc
 
-sed -i "s/FF5252/$GnomeShellClose/gI" src/gnome-shell/assets{,-dark}/window-close{,-active}.svg
+sed -i "s/EA4335/$GnomeShellClose/gI" src/gnome-shell/assets{,-dark}/window-close{,-active}.svg
 
-sed -i 's/symbolic/regular/g' src/_sass/gnome-shell/_common{-3.18,-3.24,-3.26,-3.28}.scss
+sed -i 's/symbolic/regular/g' src/_sass/gnome-shell/_common{-3.18,-3.24,-3.26,-3.28,-3.30,-3.32}.scss
 
 sleep 2s
 
@@ -122,6 +130,7 @@ chmod +x install.sh
 sudo ./install.sh
 
 sleep 2s
+
 cd ..
 rm -rf materia-theme-master
 
