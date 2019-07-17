@@ -5,6 +5,7 @@ readonly AccentColor="7952B3"
 readonly AltColor="7952B3"
 readonly GnomeShellClose="7952B3"
 readonly GnomeShellFont="Cantarell" #comment lines 90&91 to use default
+readonly Path="/usr/share/themes"
 
 ### Some colors
 ## Material Design palette -> https://material.io/guidelines/style/color.html#color-color-palette
@@ -76,7 +77,12 @@ readonly GnomeShellFont="Cantarell" #comment lines 90&91 to use default
 ## Papirus cyan = 00BAD2
 ## Papirus blue = 4F92DE
 
-sudo rm -rf /usr/share/themes/$ThemeName*
+if [ -w "$Path" ]
+then
+    rm -rf "$Path$ThemeName*"
+else
+    sudo rm -rf "$Path$ThemeName*"
+fi
 
 wget -O - https://github.com/nana-4/materia-theme/archive/master.tar.gz | tar xz
 cd materia-theme-master
@@ -127,7 +133,12 @@ sleep 2s
 ./render-assets.sh
 
 chmod +x install.sh
-sudo ./install.sh
+if [ -w "$Path" ]
+then
+    ./install.sh -d "$Path"
+else
+    sudo ./install.sh -d "$Path"
+fi
 
 sleep 2s
 
